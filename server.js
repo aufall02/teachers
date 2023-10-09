@@ -1,1 +1,7 @@
-console.log('server is ready');
+import express from "express";
+
+
+const app = express();
+
+
+

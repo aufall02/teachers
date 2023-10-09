@@ -8,6 +8,7 @@
     "start" : "node server.js",
     "dev" : "node --watch server.js"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aufall02/teachers.git"
