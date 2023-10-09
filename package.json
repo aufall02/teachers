@@ -1,0 +1,24 @@
+{
+  "name": "teachers",
+  "version": "1.0.0",
+  "description": "assigment 2 msib hacktiv8",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aufall02/teachers.git"
+  },
+  "keywords": [
+    "hacktiv8",
+    "nodejs",
+    "jwt"
+  ],
+  "author": "aufal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aufall02/teachers/issues"
+  },
+  "homepage": "https://github.com/aufall02/teachers#readme"
+}
