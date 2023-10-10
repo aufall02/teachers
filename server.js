@@ -1,4 +1,11 @@
 'use strict';
+/**
+ * Tugas membuat rest api sederhana menggunakan express dan dintregrasikan dengnan jwt
+ * 
+ * 
+ * 
+ * 
+ */
 // import express untuk membuat web server
 import express from "express";
 // import fs untuk membaca file json
@@ -90,6 +97,13 @@ function generateToken(user, secretKey) {
     }
 }
 
+
+/**
+ * get data token adalah sebuah function untuk mengambil data didalam token
+ * @param {string} token - token adalah hasil 
+ * @param {string} secretKey 
+ * @returns 
+ */
 
 // get data form token
 function getDataToken(token, secretKey) {
