@@ -1,0 +1,17 @@
+# get api test
+GET http://localhost:3000 HTTP/1.1
+
+###
+# login
+POST  http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "john_doe",
+    "password": "rahasia"
+}
+
+###
+# get all if user loggedin
+GET http://localhost:3000/teachers HTTP/1.1
+auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJ1c2VyIjoiam9obl9kb2UifSwiaWF0IjoxNjk2OTM3OTgyfQ.fopJrsC2xGc9XgGG1PzSQEnZ22pb1tvfNVqugSjB-3M
