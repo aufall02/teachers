@@ -39,11 +39,11 @@ Buatlah server Rest API menggunakan express.js dengan implementasi JWT
 - users.json
 ```json
 [
-	{
-    "id": 1,
-    "username": "john_doe",
-    "password": "rahasia"
-  }
+    {
+        "id": 1,
+        "username": "john_doe",
+        "password": "rahasia"
+    }
 ]
 ```
 
