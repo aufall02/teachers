@@ -1,10 +1,7 @@
 'use strict';
 /**
- * Tugas membuat rest api sederhana menggunakan express dan dintregrasikan dengnan jwt
- * 
- * 
- * 
- * 
+ * @deskripsi Tugas membuat rest api sederhana menggunakan express dan dintregrasikan dengnan jwt
+ * @author aufal02
  */
 // import express untuk membuat web server
 import express from "express";
@@ -13,9 +10,9 @@ import fs from 'fs/promises';
 // import jwt untuk membuat token nantinya
 import jwt from 'jsonwebtoken';
 
-
 // setup server
 // Init express
+
 const app = express();
 // set port server
 const port = process.env.PORT || 3000;
@@ -33,7 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 /**
  * 
  * @param {string} path 
- * @returns {object} 
+ * @returns {data: data, err: err} return
  */
 // get data form db
 async function getData(path) {
@@ -57,7 +54,7 @@ async function getData(path) {
 
 /**
  * 
- * @param {object} userInDb 
+ * @param {object[]} userInDb 
  * @param {object} userInput 
  * @returns {object}
  */
@@ -81,6 +78,13 @@ function isExist(userInDb, userInput) {
     };
 }
 
+
+/**
+ * 
+ * @param {object} user 
+ * @param {string} secretKey 
+ * @returns 
+ */
 
 // generate token
 function generateToken(user, secretKey) {
